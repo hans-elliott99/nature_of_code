@@ -41,6 +41,7 @@ class Polygon {
         int y() { return mY; }
         void move(int x, int y) { mX = x; mY = y; };
         void setColor(SDL_Color color) { mColor = color; };
+        void setFill(bool fill) { mFillFlag = fill; };
         virtual void draw(SDL_Renderer* renderer) = 0;
 };
 
